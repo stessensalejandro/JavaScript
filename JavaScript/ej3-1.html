@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+
+
+
+<script>
+
+var longitud = prompt("Ingresa la longitud del arreglo a crear");
+var valores= prompt("ingrese sus valores");
+var resultado=a(longitud,valores);
+
+document.getElementById("demo").innerHTML=resultado;
+
+function a(longitud,valores)
+{
+	var arr = valores.split(" ");
+	var suma=0;
+	var rep = Number(longitud);
+	
+for (var i=0; i<rep; i++) { 
+	suma +=Number(arr[i]);
+	console.log(i);
+}
+return (suma/rep);
+} 	
+
+</script>
+
+</body>
+</html>
